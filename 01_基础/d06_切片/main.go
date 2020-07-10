@@ -27,5 +27,22 @@ func main() {
 		fmt.Println("不是空")
 	}
 	// 2. :=
-	
+	s2 := []int{}
+	fmt.Println(s2)
+	// 3. make
+	var s3 []int = make([]int, 0)
+	fmt.Println(s3)
+
+	//4. 初始化赋值
+	var s4 []int = make([]int, 3, 3)
+	fmt.Println(s4)
+	s5 := []int{1, 2, 3}
+	fmt.Println(s5)
+
+	//5. 从数组切片
+	arr := []int{1,2,3,4,5}
+	var s6 []int
+	s6 = arr[1:4]
+	fmt.Println(s6)
+
 }
